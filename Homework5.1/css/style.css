@@ -108,18 +108,34 @@ input[type="submit"]:hover {
     box-shadow: 0px 0px 8px 3px #4e89b1;
 }
 
-.break-line {
-    display: block;
-    margin: 0 auto;
+.greyform-line {
+    position: relative;
 }
 
-span {
+.line-left {
+    position: absolute;
+    top: 5px;
+    left: 141.5px;
+    border-top: 1px solid #666;
+    width: 125px;
+}
+
+.line-right {
+    position: absolute;
+    top: 5px;
+    left: 293.5px;
+    border-top: 1px solid #666;
+    width: 125px;
+}
+
+fieldset {
     display: block;
-    margin: -8px;
-    margin-bottom: 30px;
     text-align: center;
     font-size: 14px;
     color: rgb(153, 153, 153);
+    border-top: 1.5px solid black;
+    margin: 0 auto;
+    width: 245px;
 }
 
 input[type="text"],
@@ -145,7 +161,6 @@ input[type="password"]:focus {
 }
 
 .check {
-    margin: 0 138px;
     font-size: 14px;
     color: rgb(204, 204, 204);
 }
@@ -162,6 +177,8 @@ input[type="submit"] {
 }
 
 .terms {
+    text-align: center;
     font-size: 11px;
     color: rgb(204, 204, 204);
+    display: block;
 }
